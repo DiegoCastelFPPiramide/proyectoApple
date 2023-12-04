@@ -3,21 +3,44 @@ body{
 }
 .container{
     background: url(imagenes/apple1.jpg) no-repeat;
-    height: 100hv;
+    height: 100vh;
     background-position: center;
     background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 h2{
     font-size: 56px;
 }
 h3{
-   font-size:28px;
+    font-size: 19px;
 }
-@media all and (max-width:480px) and (min-width:320px){
+
+@media all and (min-width:320px) and (max-width:768px){
     h2{
         font-size: 32px;
     }
+
     h3{
         font-size: 19px;
+    }
+}
+@media all and (min-width:769px) and (max-width:1024px) {
+    h2{
+        font-size: 48px;
+    }
+    h3{
+        font-size: 24px;
+    }
+}
+
+@media all and (min-width:1025px) {
+    h2{
+        font-size: 56px;
+    }
+    h3{
+       font-size:28px;
     }
 }
